@@ -10,6 +10,7 @@
     "lint": "bunx next lint"
   },
   "dependencies": {
+    "@elysiajs/swagger": "^1.1.5",
     "elysia": "^1.1.23",
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
