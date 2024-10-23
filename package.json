@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "NODE_ENV=development bunx --bun next dev",
+    "dev:node": "NODE_ENV=development bunx next dev",
+    "build": "bunx next build",
+    "start": "NODE_ENV=production bunx next start",
+    "lint": "bunx next lint"
   },
   "dependencies": {
     "elysia": "^1.1.23",
