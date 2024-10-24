@@ -13,9 +13,9 @@ abstract class Users {
     return database.select().from(users).limit(10);
   }
 
-  static async create(usersDto: CreateUserDto) {
-    const hash = await password.hash(usersDto.password);
-    return database.insert(users).values({ ...usersDto, hash });
+  static async create(user: CreateUserDto) {
+    const hash = await password.hash(user.password);
+    return database.insert(users).values({ ...user, hash });
   }
 
   static update(id: number, user: UpdateUserDto) {
