@@ -7,7 +7,8 @@
     "dev:node": "NODE_ENV=development bunx next dev",
     "build": "bunx next build",
     "start": "NODE_ENV=production bunx next start",
-    "lint": "bunx next lint"
+    "lint": "bunx next lint",
+    "migrate": "bunx drizzle-kit push"
   },
   "dependencies": {
     "@elysiajs/swagger": "^1.1.5",
